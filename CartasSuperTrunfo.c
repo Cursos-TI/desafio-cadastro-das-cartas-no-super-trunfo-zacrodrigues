@@ -8,52 +8,94 @@
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    short int codigoDaCidade;
-    char nome[20];
-    unsigned int populacao;
-    float area;
-    double pib;
-    short int qtdPontosTuristicos;
-    double densidadePopulacional;
-    double pibPerCapita;
+    short int codigoDaCidade1;
+    char nomeDaCidade1[20];
+    unsigned int populacaoDaCidade1;
+    float areaDaCidade1;
+    double pibDaCidade1;
+    short int qtdPontosTuristicosDaCidade1;
+    double densidadePopulacionalDaCidade1;
+    double pibPerCapitaDaCidade1;
+    double superPoderDaCidade1;
+
+    short int codigoDaCidade2;
+    char nomeDaCidade2[20];
+    unsigned int populacaoDaCidade2;
+    float areaDaCidade2;
+    double pibDaCidade2;
+    short int qtdPontosTuristicosDaCidade2;
+    double densidadePopulacionalDaCidade2;
+    double pibPerCapitaDaCidade2;
+    double superPoderDaCidade2;
     
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    printf("*** Cadastro de Cidade ***\n");
+    printf("*** Cadastro da Primera Cidade ***\n");
     printf("Código da cidade: ");
-    scanf("%hd", &codigoDaCidade);
-
+    scanf("%hd", &codigoDaCidade1);
     printf("Nome: ");
-    scanf("%s", &nome[0]);
-
+    scanf("%s", &nomeDaCidade1[0]);
     printf("População: ");
-    scanf("%u", &populacao);
-
+    scanf("%u", &populacaoDaCidade1);
     printf("Área: ");
-    scanf("%f", &area);
-
+    scanf("%f", &areaDaCidade1);
     printf("PIB: ");
-    scanf("%lf", &pib);
-
+    scanf("%lf", &pibDaCidade1);
     printf("Quantidade de pontos turísticos: ");
-    scanf("%hd", &qtdPontosTuristicos);
+    scanf("%hd", &qtdPontosTuristicosDaCidade1);
 
-    densidadePopulacional = (double) populacao / (double) area;
-    pibPerCapita = pib / (double) populacao;
+    densidadePopulacionalDaCidade1 = (double) populacaoDaCidade1 / (double) areaDaCidade1;
+    pibPerCapitaDaCidade1 = pibDaCidade1 / (double) populacaoDaCidade1;
+
+    superPoderDaCidade1 = (double) populacaoDaCidade1 + (double) areaDaCidade1 + pibDaCidade1 + (double) qtdPontosTuristicosDaCidade1 + densidadePopulacionalDaCidade1 + pibPerCapitaDaCidade1;
+
+    printf("\n\n*** Cadastro da Segunda Cidade ***\n");
+    printf("Código da cidade: ");
+    scanf("%hd", &codigoDaCidade2);
+    printf("Nome: ");
+    scanf("%s", &nomeDaCidade2[0]);
+    printf("População: ");
+    scanf("%u", &populacaoDaCidade2);
+    printf("Área: ");
+    scanf("%f", &areaDaCidade2);
+    printf("PIB: ");
+    scanf("%lf", &pibDaCidade2);
+    printf("Quantidade de pontos turísticos: ");
+    scanf("%hd", &qtdPontosTuristicosDaCidade2);
+
+    densidadePopulacionalDaCidade2 = (double) populacaoDaCidade2 / (double) areaDaCidade2;
+    pibPerCapitaDaCidade2 = pibDaCidade2 / (double) populacaoDaCidade2;
     
+    superPoderDaCidade2 = (double) populacaoDaCidade2 + (double) areaDaCidade2 + pibDaCidade2 + (double) qtdPontosTuristicosDaCidade2 + densidadePopulacionalDaCidade2 + pibPerCapitaDaCidade2;
+
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-    printf("\n\n*** Dados da Cidade Cadastrada ***\n");
-    printf("Código: %d\n", codigoDaCidade);
-    printf("Nome: %s\n", nome);
-    printf("População: %u\n", populacao);
-    printf("Área: %.3f\n", area);
-    printf("PIB: %.2f\n", pib);
-    printf("Pontos Turísticos: %d\n", qtdPontosTuristicos);
-    printf("Densidade Populacional: %.2lf\n", densidadePopulacional);
-    printf("PIB per Capita: %.2lf\n", pibPerCapita);
+    printf("\n\n*** Dados da Primeira Cidade Cadastrada ***\n");
+    printf("Código: %d\n", codigoDaCidade1);
+    printf("Nome: %s\n", nomeDaCidade1);
+    printf("População: %u\n", populacaoDaCidade1);
+    printf("Área: %.3f\n", areaDaCidade1);
+    printf("PIB: %.2f\n", pibDaCidade1);
+    printf("Pontos Turísticos: %d\n", qtdPontosTuristicosDaCidade1);
+    printf("Densidade Populacional: %.2lf\n", densidadePopulacionalDaCidade1);
+    printf("PIB per Capita: %.2lf\n", pibPerCapitaDaCidade1);
+    printf("Super Poder: %.2lf\n", superPoderDaCidade1);
 
+    printf("\n\n*** Dados da Segunda Cidade Cadastrada ***\n");
+    printf("Código: %d\n", codigoDaCidade2);
+    printf("Nome: %s\n", nomeDaCidade2);
+    printf("População: %u\n", populacaoDaCidade2);
+    printf("Área: %.3f\n", areaDaCidade2);
+    printf("PIB: %.2f\n", pibDaCidade2);
+    printf("Pontos Turísticos: %d\n", qtdPontosTuristicosDaCidade2);
+    printf("Densidade Populacional: %.2lf\n", densidadePopulacionalDaCidade2);
+    printf("PIB per Capita: %.2lf\n", pibPerCapitaDaCidade2);
+    printf("Super Poder: %.2lf\n", superPoderDaCidade2);
+    
+    printf("\n\n*** Comparação entre os dados das duas cidades ***\n");
+    printf("");
+    
     return 0;
 }
