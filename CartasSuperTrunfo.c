@@ -95,7 +95,13 @@ int main() {
     printf("Super Poder: %.2lf\n", superPoderDaCidade2);
     
     printf("\n\n*** Comparação entre os dados das duas cidades ***\n");
-    printf("");
+    printf("%s tem maior população que %s? %d\n", nomeDaCidade1, nomeDaCidade2, populacaoDaCidade1 > populacaoDaCidade2);
+    printf("%s tem uma área maior que %s? %d\n", nomeDaCidade1, nomeDaCidade2, areaDaCidade1 > areaDaCidade2);
+    printf("%s tem o PIB maior que %s? %d\n", nomeDaCidade1, nomeDaCidade2, pibDaCidade1 > pibDaCidade2);
+    printf("%s tem mais pontos turísticos que %s? %d\n", nomeDaCidade1, nomeDaCidade2, qtdPontosTuristicosDaCidade1 > qtdPontosTuristicosDaCidade2);
+    printf("%s tem menos densidade populacional que %s? %d\n", nomeDaCidade1, nomeDaCidade2, densidadePopulacionalDaCidade1 < densidadePopulacionalDaCidade2);
+    printf("%s tem o PIB per Capita maior que %s? %d\n", nomeDaCidade1, nomeDaCidade2, pibPerCapitaDaCidade1 > pibPerCapitaDaCidade2);
+    printf("%s tem o Super Poder maior que %s? %d\n", nomeDaCidade1, nomeDaCidade2, superPoderDaCidade1 > superPoderDaCidade1);
     
     return 0;
 }
