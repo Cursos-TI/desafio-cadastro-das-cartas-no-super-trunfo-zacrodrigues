@@ -8,8 +8,8 @@ int main() {
     float areaDaCidade1;
     double pibDaCidade1;
     int qtdPontosTuristicosDaCidade1;
-    // double densidadePopulacionalDaCidade1;
-    // double pibPerCapitaDaCidade1;
+    float densidadePopulacionalDaCidade1;
+    float pibPerCapitaDaCidade1;
     // double superPoderDaCidade1;
 
     char estadoDaCidade2;
@@ -19,8 +19,8 @@ int main() {
     float areaDaCidade2;
     double pibDaCidade2;
     int qtdPontosTuristicosDaCidade2;
-    // double densidadePopulacionalDaCidade2;
-    // double pibPerCapitaDaCidade2;
+    float densidadePopulacionalDaCidade2;
+    float pibPerCapitaDaCidade2;
     // double superPoderDaCidade2;
     
     printf("*** Cadastro da Primeira Carta ***\n");
@@ -39,8 +39,8 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &qtdPontosTuristicosDaCidade1);
 
-    // densidadePopulacionalDaCidade1 = (double) populacaoDaCidade1 / (double) areaDaCidade1;
-    // pibPerCapitaDaCidade1 = pibDaCidade1 / (double) populacaoDaCidade1;
+    densidadePopulacionalDaCidade1 = (float) populacaoDaCidade1 / areaDaCidade1;
+    pibPerCapitaDaCidade1 = (float) pibDaCidade1 / (float) populacaoDaCidade1;
     // superPoderDaCidade1 = (double) populacaoDaCidade1 + (double) areaDaCidade1 + pibDaCidade1 + (double) qtdPontosTuristicosDaCidade1 + densidadePopulacionalDaCidade1 + pibPerCapitaDaCidade1;
 
     printf("\n*** Carta 1 ***\n");
@@ -51,8 +51,8 @@ int main() {
     printf("Área: %.3f km²\n", areaDaCidade1);
     printf("PIB: %.2f bilhões de reais\n", pibDaCidade1);
     printf("Número de Pontos Turísticos: %d\n", qtdPontosTuristicosDaCidade1);
-    // printf("Densidade Populacional: %.2lf\n", densidadePopulacionalDaCidade1);
-    // printf("PIB per Capita: %.2lf\n", pibPerCapitaDaCidade1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacionalDaCidade1);
+    printf("PIB per Capita: %.2f reais\n", pibPerCapitaDaCidade1);
     // printf("Super Poder: %.2lf\n", superPoderDaCidade1);
 
     printf("\n*** Cadastro da Segunda Carta ***\n");
@@ -71,8 +71,8 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &qtdPontosTuristicosDaCidade2);
 
-    // densidadePopulacionalDaCidade2 = (double) populacaoDaCidade2 / (double) areaDaCidade2;
-    // pibPerCapitaDaCidade2 = pibDaCidade2 / (double) populacaoDaCidade2;
+    densidadePopulacionalDaCidade2 = (float) populacaoDaCidade2 / areaDaCidade2;
+    pibPerCapitaDaCidade2 = (float) pibDaCidade2 / (float) populacaoDaCidade2;
     // superPoderDaCidade2 = (double) populacaoDaCidade2 + (double) areaDaCidade2 + pibDaCidade2 + (double) qtdPontosTuristicosDaCidade2 + densidadePopulacionalDaCidade2 + pibPerCapitaDaCidade2;
 
     printf("\n*** Carta 2 ***\n");
@@ -83,8 +83,8 @@ int main() {
     printf("Área: %.3f km²\n", areaDaCidade2);
     printf("PIB: %.2f bilhões de reais\n", pibDaCidade2);
     printf("Número de Pontos Turísticos: %d\n", qtdPontosTuristicosDaCidade2);
-    // printf("Densidade Populacional: %.2lf\n", densidadePopulacionalDaCidade2);
-    // printf("PIB per Capita: %.2lf\n", pibPerCapitaDaCidade2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacionalDaCidade2);
+    printf("PIB per Capita: %.2f reais\n", pibPerCapitaDaCidade2);
     // printf("Super Poder: %.2lf\n", superPoderDaCidade2);
     
     // printf("\n*** Comparação entre os dados das duas cidades ***\n");
